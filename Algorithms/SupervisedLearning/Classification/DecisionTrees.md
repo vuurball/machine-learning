@@ -1,5 +1,10 @@
-example of simple model training and predictions using a decision tree algo
-for predicting a persons music genre preference based on age and gender:
+**Example:**
+
+Predict the prefered music genre of a person based on age & gender
+
+**Dataset:** 
+
+A list of age,gender,prefered-music-genre data (small sample that doesnt include all ages), 
 
 ![concept](https://d1rwhvwstyk9gu.cloudfront.net/2019/02/Decision-Trees.jpg)
 

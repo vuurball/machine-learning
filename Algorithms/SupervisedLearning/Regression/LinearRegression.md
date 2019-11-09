@@ -1,4 +1,10 @@
-**Dataset** in this example is Daily BTCUSD OHLC data, sort Date ASC
+**Example:**
+
+Predict the future Price of the currency pair
+
+**Dataset:** 
+
+Daily BTCUSD OHLC data, sorted by Date ASC
 
 **Step 1: import libs and fetch the dataset**
 ```python
@@ -60,6 +66,7 @@ df['label'] = df['Close'].shift(-forecast_out)
 ```
 
 **Step 4: Defining the FEATURES and the LABEL**
+
 in our example the label is the price column "Close" 
 because we want to try and predict the price in the future
 
