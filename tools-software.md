@@ -10,7 +10,7 @@
  - **jupyter** - a ML IDE
 
 after installing anaconda try typing in cmd `jupyter notebook`, if not recognized look for this option in the start menu,and open from there. a new browser window will automatically open.
-the page shows computer files explorer, go to some dir like desktop and select "New notebook"
+the page shows computer files explorer, go to some dir like desktop and select "New notebook" (new->python3)
 give it a name at the top. this will create a name.ipynb file in the selected location.
 
 go to [kaggle.com](https://www.kaggle.com/) to get some data set to work with.

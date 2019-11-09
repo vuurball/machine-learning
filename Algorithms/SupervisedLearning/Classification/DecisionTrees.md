@@ -58,7 +58,6 @@ joblib.dump(model, 'music-recomender.joblib') #saving into file
 
 now we can load the model file we created, to use it for predictions in our app
 ```python
-import pandas as pd
 from sklearn.externals import joblib # joblib has funcs for saving a loading models
 
 model = joblib.load('music-recomender.joblib')
@@ -70,7 +69,7 @@ output>array(['HipHop', 'Dance'], dtype=object)
 ```
 
 to visualize our decision model in a graph
-```
+```python
 import pandas as pd
 from sklearn.tree import DecisionTreeClassifier
 from sklearn import tree # this obj has method for exporting model in graphical format

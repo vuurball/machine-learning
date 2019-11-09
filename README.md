@@ -13,7 +13,7 @@ Usage examples: spam-filters, language detection, finding similar documents, han
 
 ### 1.1.1. Decision Trees
 
-[example code]()
+[example code](https://github.com/vuurball/machine-learning/blob/master/Algorithms/SupervisedLearning/Classification/DecisionTrees.md)
 
 ### 1.1.2. SVM (support vector machine) 
 
@@ -34,6 +34,8 @@ In regression problems we do real value predictions.
 ### 1.2.1. Polynomial Regression
 
 ### 1.2.2. Linear Regression 
+
+[example code](https://github.com/vuurball/machine-learning/blob/master/Algorithms/SupervisedLearning/Regression/LinearRegression.md)
 
 ### 1.2.3. Ridge/Lasso Regression
 
