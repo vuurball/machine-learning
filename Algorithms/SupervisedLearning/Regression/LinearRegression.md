@@ -17,6 +17,7 @@ from sklearn.linear_model import LinearRegression
 
 import matplotlib.pyplot as plt #for charting the results
 from matplotlib import style #for charting the results
+import pickle # to export and import the model
 
 style.use('ggplot') #for charting the results
 
@@ -101,6 +102,14 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
 model = LinearRegression()
 
 model.fit(X_train, y_train) # passing training X and y sets
+
+# export model to file
+with open('model.pickle', 'wb') as f:
+    pickle.dump(model, f)
+
+# import model from file
+pickle_in = open('model.pickle', 'rb')
+model = pickle.load()
 
 score = model.score(X_test, y_test) #testing accuracy
 ```
