@@ -8,7 +8,7 @@ from sklearn import preprocessing, neighbors
 import pandas as pd
 from sklearn.model_selection import train_test_split
 
-df = pd.read_csv('KNNdataset.data')
+df = pd.read_csv('K-NNdataset.data')
 
 # replacing missing data '?' with a number '-99999'
 df.replace('?', -99999, inplace=True)

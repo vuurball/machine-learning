@@ -17,8 +17,6 @@ Usage examples: spam-filters, language detection, finding similar documents, han
 
 ### 1.1.2. SVM (support vector machine) 
 
-![chart](https://d1rwhvwstyk9gu.cloudfront.net/2019/02/Support-Vector-Machine.jpg)
-
 [example code](https://github.com/vuurball/machine-learning/blob/master/Algorithms/SupervisedLearning/Classification/SVM.py)
 
 ### 1.1.3. Logistic Regression 
@@ -26,8 +24,6 @@ Usage examples: spam-filters, language detection, finding similar documents, han
 ### 1.1.4. Naive Bayes 
 
 ### 1.1.5. K-NN 
-
-![chart](https://d1rwhvwstyk9gu.cloudfront.net/2019/02/KNN-300x174.jpg)
 
 [example code](https://github.com/vuurball/machine-learning/blob/master/Algorithms/SupervisedLearning/Classification/K-NN.py)
 
@@ -42,7 +38,9 @@ SVM is much more scalable.
 
 ## 1.2. Regression
 
-In regression problems we do real value predictions. 
+In regression problems we do real value predictions. Basically we try to draw a line/plane/n-dimensional plane along the training examples.
+
+Usage examples: stock price forecast, sales analysis, dependency of any number, etc.
 
 ### 1.2.1. Polynomial Regression
 
@@ -57,21 +55,25 @@ In regression problems we do real value predictions.
 
 The Algo finds the clusters (labels) on its own without the scientist feeding them to the model first.
 
+Usage examples: market segmentation, social networks analysis, organize computing clusters, astronomical data analysis, image compression, etc.
+
 ## 2.1. Clustering
 
 **Flat clusteting:** we tell the machine to find 2 or 3 clusters
 
-**High hyrarhical clustering:** the machine figures out what groups there are and how many there are
+**Hierarchical clustering:** the machine figures out what groups there are and how many there are
 
 ### 2.1.1. K-Means
 
-providing only the K (number of clusters we want)
+[Flat clusteting] providing the model with a dataset and asking it to sepparate the dataset into K number of groups
 
 [example code](https://github.com/vuurball/machine-learning/blob/master/Algorithms/UnsupervisedLearning/Clustering/K-Means.py)
 
 ### 2.1.2. Mean Shift
 
+[Hierarchical clustering] providing the model with a dataset and asking it to sepparate the dataset into groups, telling us how many groups there are, and what they are
 
+[example code](https://github.com/vuurball/machine-learning/blob/master/Algorithms/UnsupervisedLearning/Clustering/MeanShift.py)
 
 ### 2.1.3. Fuzzy C-Means
 
@@ -104,6 +106,9 @@ providing only the K (number of clusters we want)
 
 # 4. Neural Networks & Deep Learning
 
+The neural network itself isn't an algorithm, but rather a framework for many different machine learning algorithms to work together and process complex data inputs.
+
+Usage examples: as a substitute of all other algorithms in general, image recognition, voice recognition, image processing _(applying specific style_), language translation, etc.
 
 # 5. Ensemble Learning
 
@@ -112,8 +117,6 @@ providing only the K (number of clusters we want)
 ## 5.2 Bagging
 
 ### 5.2.1 Random Forrest
-
-![chart](https://d1rwhvwstyk9gu.cloudfront.net/2019/02/Random-Forest.jpg)
 
 ## 5.3. Boosting
 
