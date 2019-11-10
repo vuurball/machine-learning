@@ -27,6 +27,17 @@ Usage examples: spam-filters, language detection, finding similar documents, han
 
 ![chart](https://d1rwhvwstyk9gu.cloudfront.net/2019/02/KNN-300x174.jpg)
 
+[example code](https://github.com/vuurball/machine-learning/blob/master/Algorithms/SupervisedLearning/Classification/K-NN.py)
+
+For classifying an object into 1 of the pre known catagories.
+The algo will look at the K nearest objects, and based on those will assign the category of the majority of the neighbor objects.
+it is important to select the right K. for 2 catagories, K shouldnt be =2, because then there might be a deadlock, same as for 3 categories, K shouldnt be =3.
+the KNN model will not only output a classification, but it will also give an accuracy % of the model and an confidence % for each classification.
+so if we had 2 categories A,B, and K=3, if the model tries to classify X, and finds nearest 3 neighbors are A,A,B. then classification is A with confidence of 66%.
+This is not the most afficient algo because each classification will recalculated distances of all points in data set.
+SVM is much more scalable.
+
+
 ## 1.2. Regression
 
 In regression problems we do real value predictions. 
