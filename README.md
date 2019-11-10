@@ -55,6 +55,49 @@ In regression problems we do real value predictions.
 
 # 2. Unsupervised Learning
 
+The Algo finds the clusters (labels) on its own without the scientist feeding them to the model first.
+
+## 2.1. Clustering
+
+**Flat clusteting:** we tell the machine to find 2 or 3 clusters
+
+**High hyrarhical clustering:** the machine figures out what groups there are and how many there are
+
+### 2.1.1. K-Means
+
+providing only the K (number of clusters we want)
+
+[example code](https://github.com/vuurball/machine-learning/blob/master/Algorithms/UnsupervisedLearning/Clustering/K-Means.py)
+
+### 2.1.2. Mean Shift
+
+
+
+### 2.1.3. Fuzzy C-Means
+
+### 2.1.4. DBSCAN
+
+### 2.1.5. Agglomerative
+
+## 2.2. Association Rule Learning
+
+### 2.2.1. FP Growth
+
+### 2.2.2. Euclat
+
+### 2.2.3. Apriori
+
+## 2.3 Dimensionality Reduction
+
+### 2.3.1. t-SNE
+
+### 2.3.2. PCA
+
+### 2.3.3. LSA
+
+### 2.3.4. SVD
+
+### 2.3.5. LDA
 
 # 3. Reinforcement Learning
 
