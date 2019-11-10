@@ -19,6 +19,8 @@ Usage examples: spam-filters, language detection, finding similar documents, han
 
 ![chart](https://d1rwhvwstyk9gu.cloudfront.net/2019/02/Support-Vector-Machine.jpg)
 
+[example code](https://github.com/vuurball/machine-learning/blob/master/Algorithms/SupervisedLearning/Classification/SVM.py)
+
 ### 1.1.3. Logistic Regression 
 
 ### 1.1.4. Naive Bayes 
