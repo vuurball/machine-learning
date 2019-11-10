@@ -1,10 +1,12 @@
-######################################################################################
+############################################
+###### SVM - Support Vector Machine
 # Classifiying class based on combination of attributes
 # Dataset is attached, and taken from https://archive.ics.uci.edu/ml/datasets.php
-######################################################################################
-
+#
+# code is identicle to K-NN example, only the classifier changed
+############################################
 import numpy as np
-from sklearn import preprocessing, neighbors
+from sklearn import preprocessing, svm
 import pandas as pd
 from sklearn.model_selection import train_test_split
 
@@ -23,8 +25,7 @@ y = df['class']
 
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
 
-# K=5, KNeighborsClassifier(n_neighbors=5, ...)
-model = neighbors.KNeighborsClassifier()
+model = svm.SVC()
 model.fit(X_train, y_train)
 
 # testing model accuracy
