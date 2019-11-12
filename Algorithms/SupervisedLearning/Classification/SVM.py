@@ -3,7 +3,7 @@
 # Classifiying class based on combination of attributes
 # Dataset is attached, and taken from https://archive.ics.uci.edu/ml/datasets.php
 #
-# code is identicle to K-NN example, only the classifier changed
+# code is identical to K-NN example, only the classifier changed
 ############################################
 import numpy as np
 from sklearn import preprocessing, svm

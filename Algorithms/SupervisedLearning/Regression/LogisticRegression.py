@@ -1,21 +1,20 @@
 ########################################################################
-# based on our dataset we want to see what we can learn from it
-# will the data have a clear pattern as to wether a person survives or not
-# this kind of test could be run ahead of time to see what are the chance of survival of each person.
-#
-# dataset is info about titanic passangers (attached)
+# Based on our dataset we want to see if we can predict wether a person survives or not
+
+# Dataset is info about titanic passangers (attached)
 # including: passanger class, is_survived, name, gender, age, #siblings
 # #parants/children, ticket #, ticket fare GBP, cabin, port, lifeboat, id, detination
 
-import matplotlib.pyplot as plt
-from matplotlib import style
-style.use('ggplot')
-import numpy as np
-from sklearn.cluster import KMeans
-from sklearn import preprocessing
-import pandas as pd
 
-df = pd.read_excel('K-MeansDataset.xls')
+import numpy as np
+import matplotlib.pyplot as plt
+import pandas as pd
+from sklearn.model_selection import train_test_split
+from sklearn.linear_model import LogisticRegression
+from sklearn.metrics import accuracy_score 
+from sklearn import preprocessing
+
+df = pd.read_excel('LogisticRegressionDataset.xls')
 
 # droping useless columns
 df.drop(['body', 'name'], 1, inplace=True)
@@ -61,24 +60,14 @@ X = np.array(df.drop(['survived'], 1).astype(float))
 X = preprocessing.scale(X)
 y = df['survived']
 
-model = KMeans(n_clusters=2)
-model.fit(X)
+df.head()
 
-correct = 0
-for i in range(len(X)):
-    predict_me = np.array(X[i].astype(float))
-    predict_me = predict_me.reshape(-1, len(predict_me))
-    prediction = model.predict(predict_me)
-    if prediction[0] == y[i]:
-        correct += 1
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
 
-# result:        
-(correct/len(X))
+model = LogisticRegression(random_state=0)
+model.fit(X_train, y_train)
 
-# the result value is flactuating between 0.7 and 0.2 which is the same as 70% 
-# its a good result since we know we have 2 groups, "0"=died, "1"=survived
-# we compare to those 2 groups, but the model might have classified things
-# as "1"=died, "0"=survived
-# so it looks like almost nothing matches, but in reality this means that the 
-# 2 groups were sepparated correctly 70% of the time
- 
+y_pred = model.predict(X_test)
+score = accuracy_score(y_test, y_pred)
+
+# score = 95%~

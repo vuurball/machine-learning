@@ -43,6 +43,13 @@ Usage examples: stock price forecast, sales analysis, dependency of any number, 
 
 [example code](https://github.com/vuurball/machine-learning/blob/master/Algorithms/SupervisedLearning/Regression/LinearRegression.md)
 
+### 1.2.2. Logistic Regression
+
+[example code](https://github.com/vuurball/machine-learning/blob/master/Algorithms/SupervisedLearning/Regression/LogisticRegression.md)
+
+To predict whether a person will buy a car (1) or (0)
+To know whether the tumor is malignant (1) or (0)
+
 
 # 2. Unsupervised Learning
 
