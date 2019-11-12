@@ -19,11 +19,7 @@ Usage examples: spam-filters, language detection, finding similar documents, han
 
 [example code](https://github.com/vuurball/machine-learning/blob/master/Algorithms/SupervisedLearning/Classification/SVM.py)
 
-### 1.1.3. Logistic Regression 
-
-### 1.1.4. Naive Bayes 
-
-### 1.1.5. K-NN 
+### 1.1.3. K-NN 
 
 [example code](https://github.com/vuurball/machine-learning/blob/master/Algorithms/SupervisedLearning/Classification/K-NN.py)
 
@@ -42,13 +38,10 @@ In regression problems we do real value predictions. Basically we try to draw a 
 
 Usage examples: stock price forecast, sales analysis, dependency of any number, etc.
 
-### 1.2.1. Polynomial Regression
 
-### 1.2.2. Linear Regression 
+### 1.2.1. Linear Regression 
 
 [example code](https://github.com/vuurball/machine-learning/blob/master/Algorithms/SupervisedLearning/Regression/LinearRegression.md)
-
-### 1.2.3. Ridge/Lasso Regression
 
 
 # 2. Unsupervised Learning
@@ -59,9 +52,6 @@ Usage examples: market segmentation, social networks analysis, organize computin
 
 ## 2.1. Clustering
 
-**Flat clusteting:** we tell the machine to find 2 or 3 clusters
-
-**Hierarchical clustering:** the machine figures out what groups there are and how many there are
 
 ### 2.1.1. K-Means
 
@@ -75,55 +65,4 @@ Usage examples: market segmentation, social networks analysis, organize computin
 
 [example code](https://github.com/vuurball/machine-learning/blob/master/Algorithms/UnsupervisedLearning/Clustering/MeanShift.py)
 
-### 2.1.3. Fuzzy C-Means
 
-### 2.1.4. DBSCAN
-
-### 2.1.5. Agglomerative
-
-## 2.2. Association Rule Learning
-
-### 2.2.1. FP Growth
-
-### 2.2.2. Euclat
-
-### 2.2.3. Apriori
-
-## 2.3 Dimensionality Reduction
-
-### 2.3.1. t-SNE
-
-### 2.3.2. PCA
-
-### 2.3.3. LSA
-
-### 2.3.4. SVD
-
-### 2.3.5. LDA
-
-# 3. Reinforcement Learning
-
-
-# 4. Neural Networks & Deep Learning
-
-The neural network itself isn't an algorithm, but rather a framework for many different machine learning algorithms to work together and process complex data inputs.
-
-Usage examples: as a substitute of all other algorithms in general, image recognition, voice recognition, image processing _(applying specific style_), language translation, etc.
-
-# 5. Ensemble Learning
-
-## 5.1. Stacking
-
-## 5.2 Bagging
-
-### 5.2.1 Random Forrest
-
-## 5.3. Boosting
-
-### 5.3.1. XGBoost
-
-### 5.3.2. LightGBM
-
-### 5.3.3. CatBoost
-
-### 5.3.4. AdaBoost
