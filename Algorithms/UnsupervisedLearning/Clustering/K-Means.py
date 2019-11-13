@@ -35,7 +35,7 @@ def handle_non_numerical_data(df):
         text_digit_vals = {}
         
         def convert_to_int(val):
-            return text_digit_vals[val]
+            return  
         
         # if current column is not numeric:
         if df[col].dtype != np.int64 and df[col].dtype != np.float64:
